@@ -36,9 +36,9 @@ spec:
           container('build') {
                 stage('Build Image') {
                     docker.withRegistry( 'https://registry.hub.docker.com', 'docker' ) {
-                    def customImage = docker.build("dpthub/webapp")
+                    def customImage = docker.build("kenappiah/webapp")
                     customImage.push()             
-                    }
+                    }   
                 }
             }
         }
