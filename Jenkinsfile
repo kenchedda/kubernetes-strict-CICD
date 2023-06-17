@@ -28,7 +28,7 @@ spec:
           container('build') {
                 stage('Build a Maven project') {
                     sh 'mvn clean deploy -s settings.xml'
-                    sh 'systemctl start docker'             
+                                 
                 }
             }
         }
