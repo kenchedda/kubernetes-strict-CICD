@@ -70,11 +70,11 @@
 		</plugins>
 	</build>
 <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>a0ets8ph6kgsf-artifactory-primary-0-releases</name>
-        <url>https://edwikifacts.jfrog.io/artifactory/edweb-libs-release-local</url>
-    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>a0us8facs3toj-artifactory-primary-0-releases</name>
+        <url>https://kenappiah.jfrog.io/artifactory/libs-release</url>
+    </snapshotRepository>
 </distributionManagement>
  
 

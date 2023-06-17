@@ -1,2 +1,4 @@
-FROM dpthub/edtomcatbase
-COPY target/*.war /opt/tomcat/webapps/ 
+FROM tomcat:latest
+RUN rm -rf /usr/local/tomcat/webapps/*
+COPY ./target/*.war /usr/local/tomcat/webapps/
+CMD  ["catalina.sh", "run"]

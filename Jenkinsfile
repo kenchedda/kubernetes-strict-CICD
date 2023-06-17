@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: build
-    image: dpthub/edbuild
+    image: kenappiah/build-agent:2.0
     command:
     - cat
     tty: true
@@ -24,7 +24,7 @@ spec:
     node (label) {
 
         stage ('Checkout SCM'){
-          git url: 'https://dptrealtime@bitbucket.org/dptrealtime/edweb-login-integration.git', branch: 'master'
+          git url: 'https://github.com/kenchedda/kubernetes-strict-CICD.git', branch: 'main', credentialsId: 'github'
           container('build') {
                 stage('Build a Maven project') {
                     sh 'mvn clean deploy -s settings.xml'             

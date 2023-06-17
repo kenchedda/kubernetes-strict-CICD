@@ -3,13 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <servers>
     <server>
-      <username>dptprojectspr@gmail.com</username>
-      <password>Admin@123</password>
+      <username>jnrcheddabob@gmail.com</username>
+      <password>cmVmdGtuOjAxOjE3MTg1Njc2MDk6NW9vWEdSUU9QRW1KVjd6VUFzUnk5Qm1lYWlT</password>
       <id>central</id>
     </server>
     <server>
-      <username>dptprojectspr@gmail.com</username>
-      <password>Admin@123</password>
+      <username>jnrcheddabob@gmail.com</username>
+      <password>cmVmdGtuOjAxOjE3MTg1Njc2MDk6NW9vWEdSUU9QRW1KVjd6VUFzUnk5Qm1lYWlT</password>
       <id>snapshots</id>
     </server>
   </servers>
@@ -21,14 +21,14 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>edweb-libs-release</name>
-          <url>https://edwikifacts.jfrog.io/artifactory/edweb-libs-release</url>
+          <name>libs-release</name>
+          <url>https://kenappiah.jfrog.io/artifactory/libs-release</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
-          <name>edweb-libs-snapshot</name>
-          <url>https://edwikifacts.jfrog.io/artifactory/edweb-libs-snapshot</url>
+          <name>libs-snapshot</name>
+          <url>https://kenappiah.jfrog.io/artifactory/libs-snapshot</url>
         </repository>
       </repositories>
       <pluginRepositories>
@@ -37,14 +37,14 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>edweb-libs-release</name>
-          <url>https://edwikifacts.jfrog.io/artifactory/edweb-libs-release</url>
+          <name>libs-release</name>
+          <url>https://kenappiah.jfrog.io/artifactory/libs-release</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
-          <name>edweb-libs-snapshot</name>
-          <url>https://edwikifacts.jfrog.io/artifactory/edweb-libs-snapshot</url>
+          <name>libs-snapshot</name>
+          <url>https://kenappiah.jfrog.io/artifactory/libs-snapshot</url>
         </pluginRepository>
       </pluginRepositories>
       <id>artifactory</id>
