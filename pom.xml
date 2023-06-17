@@ -70,11 +70,11 @@
 		</plugins>
 	</build>
 <distributionManagement>
-    <snapshotRepository>
-        <id>snapshots</id>
+    <repository>
+        <id>central</id>
         <name>a0us8facs3toj-artifactory-primary-0-releases</name>
         <url>https://kenappiah.jfrog.io/artifactory/libs-release</url>
-    </snapshotRepository>
+    </repository>
 </distributionManagement>
  
 
