@@ -27,7 +27,8 @@ spec:
           git url: 'https://github.com/kenchedda/kubernetes-strict-CICD.git', branch: 'main', credentialsId: 'github'
           container('build') {
                 stage('Build a Maven project') {
-                    sh 'mvn clean deploy -s settings.xml'             
+                    sh 'mvn clean deploy -s settings.xml'
+                    sh 'systemctl start docker'             
                 }
             }
         }
