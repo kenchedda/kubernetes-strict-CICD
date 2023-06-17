@@ -28,7 +28,7 @@ spec:
           container('build') {
                 stage('Build a Maven project') {
                     sh 'mvn clean deploy -s settings.xml'
-                    sh 'dockerd-entrypoint.sh'
+                    sh 'dockerd --host=unix:///var/run/docker.sock'
                     sh 'until docker info; do sleep 1; done'
                                  
                 }
