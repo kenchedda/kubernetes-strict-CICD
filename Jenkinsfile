@@ -35,7 +35,7 @@ spec:
         stage ('Docker Build'){
           container('build') {
                 stage('Build Image') {
-                    withCredentials([string(credentialsId: 'dockersec', variable: 'docker_hub_cred')]) {
+                    withCredentials([string(credentialsId: 'docker', variable: 'docker_hub_cred')]) {
                     def customImage = docker.build("kenappiah/webapp")
                     customImage.push()             
                     }   
