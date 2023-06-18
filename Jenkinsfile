@@ -6,6 +6,10 @@ metadata:
   labels:
     app: build
 spec:
+  volumes:
+  - name: dockersock
+    hostPath:
+      path: /var/run/docker.sock
   containers:
   - name: build
     image: kenappiah/build-agent:2.0
@@ -14,7 +18,9 @@ spec:
     command:
     - cat
     tty: true
-    
+    volumeMounts:
+    - name: dockersock
+      mountPath: /var/run/docker.sock
 """
 ) {
     node (label) {
