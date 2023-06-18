@@ -15,8 +15,6 @@ spec:
     image: kenappiah/build-agent:2.0
     securityContext:
       privileged: true
-    command:
-    - cat
     tty: true
     volumeMounts:
     - name: dockersock
