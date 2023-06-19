@@ -8,7 +8,7 @@ metadata:
 spec:
   containers:
   - name: build
-    image: kenappiah/build:1.0
+    image: kenappiah/build:3.0
     command:
     - cat
     tty: true
