@@ -8,15 +8,15 @@ pipeline {
     
     stages {
 
-        stage ('Checkout SCM'){
-          git url: 'https://github.com/kenchedda/kubernetes-strict-CICD.git', branch: 'main', credentialsId: 'github'
-          
+                stage ('Checkout SCM'){
+                git url: 'https://github.com/kenchedda/kubernetes-strict-CICD.git', branch: 'main', credentialsId: 'github'
+        }
+
+
                 stage('Build a Maven project') {
-                    sh 'mvn clean deploy -s settings.xml'
-                   
-                                 
+                    sh 'mvn clean deploy -s settings.xml'                 
                 }
-            }
+            
         
 
           
