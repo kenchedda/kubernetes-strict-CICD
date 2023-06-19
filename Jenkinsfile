@@ -10,7 +10,7 @@ pipeline {
 
                 stage ('Checkout SCM'){
                 git url: 'https://github.com/kenchedda/kubernetes-strict-CICD.git', branch: 'main', credentialsId: 'github'
-        }
+                }
 
 
                 stage('Build a Maven project') {
